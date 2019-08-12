@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  angularApp:
+    image: angularappimage
+    build: ./Angular_FrontEnd
+    ports:
+      - "4200:4200"
+
+  nodeApp:
+    image: nodeappimage
+    build: ./NodeJS_Server
+    ports:
+      - "3000:3000"
